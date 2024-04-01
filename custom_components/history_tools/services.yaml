@@ -1,0 +1,24 @@
+integrate:
+  fields:
+    entity_id:
+      required: true
+      selector:
+        entity:
+    start_time:
+      required: true
+      selector:
+        datetime:
+    end_time:
+      required: true
+      selector:
+        datetime:
+    max_clip_value:
+      selector:
+        number:
+          step: 0.1
+          mode: box
+    min_clip_value:
+      selector:
+        number:
+          step: 0.1
+          mode: box
