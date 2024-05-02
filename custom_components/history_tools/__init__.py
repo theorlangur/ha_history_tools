@@ -11,7 +11,7 @@ MAX_CLIP_VALUE = "max_clip_value"
 MIN_CLIP_VALUE = "min_clip_value"
 
 
-def setup(hass, config):
+async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Set up is called when Home Assistant is loading our component."""
 
     def _state_changes_during_period(
